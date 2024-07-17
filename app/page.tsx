@@ -21,8 +21,8 @@ const GeneralPage = (years: any, months: any) => {
   const age = calculateAge();
 
   return (
-    <div>
-      <div className="page_wrapper absolute flex h-screen w-screen flex-wrap bg-[#070729] opacity-70">
+    <div className="page relative">
+      <div className="page_wrapper absolute flex h-screen w-screen flex-wrap bg-[#070729] opacity-80">
         <div className="left_menu font-masterpiece flex h-screen w-[45%] flex-col justify-evenly bg-slate-400 text-slate-700">
           <div className="title_section flex h-[60%] flex-col items-center p-3 sm:p-5">
             <div className="flex flex-col items-center pb-2 pt-5 text-3xl font-semibold sm:justify-between lg:flex-row lg:text-5xl">
@@ -105,33 +105,30 @@ const GeneralPage = (years: any, months: any) => {
               </h3>
             </div>
             <div className="flex flex-col py-2">
-              {experience.map((el) => {
-                return (
-                  <>
-                    <div className="py-3" />
-                    <div className="experience_card group justify-evenly rounded-3xl py-2 text-center transition hover:border-2 hover:border-slate-200 hover:shadow-xl hover:shadow-slate-200">
-                      <a href={`https://${el.link}`}>
-                        <h3 className="position text-lg font-bold transition-all duration-300 group-hover:text-2xl">
-                          {el.name}
-                        </h3>
-                        <div className="company font-extralight transition-all duration-300 group-hover:text-lg">
-                          {el.company}
-                        </div>
-                        <p className="dates font-serif transition-all duration-300 group-hover:text-lg">
-                          {el.dates}
-                        </p>
-                        <div className="flex flex-wrap items-center justify-center font-light transition-all duration-300 group-hover:text-lg">
-                          <p className="location pr-2">{el.location}</p>
-                          <p className="work_type">{el.workType}</p>
-                        </div>
-                        <p className="description font-thin transition-all duration-300 group-hover:text-lg">
-                          {el.responsibilities}
-                        </p>
-                      </a>
-                    </div>
-                  </>
-                );
-              })}
+              {experience.map((el, index) => (
+                <div key={`experience-${index}`} className="py-3">
+                  <div className="experience_card group justify-evenly rounded-3xl py-2 text-center transition hover:border-2 hover:border-slate-200 hover:shadow-xl hover:shadow-slate-200">
+                    <a href={`https://${el.link}`}>
+                      <h3 className="position text-lg font-bold transition-all duration-300 group-hover:text-2xl">
+                        {el.name}
+                      </h3>
+                      <div className="company font-extralight transition-all duration-300 group-hover:text-lg">
+                        {el.company}
+                      </div>
+                      <p className="dates font-serif transition-all duration-300 group-hover:text-lg">
+                        {el.dates}
+                      </p>
+                      <div className="flex flex-wrap items-center justify-center font-light transition-all duration-300 group-hover:text-lg">
+                        <p className="location pr-2">{el.location}</p>
+                        <p className="work_type">{el.workType}</p>
+                      </div>
+                      <p className="description font-thin transition-all duration-300 group-hover:text-lg">
+                        {el.responsibilities}
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
           <section id="projects" className="px-4">
@@ -139,26 +136,23 @@ const GeneralPage = (years: any, months: any) => {
               Projects
             </h3>
             <div className="flex flex-col py-2">
-              {projects.map((el) => {
-                return (
-                  <>
-                    <div className="py-3" />
-                    <div className="project_card group justify-evenly rounded-3xl py-2 text-center transition hover:border-2 hover:border-slate-200 hover:shadow-xl hover:shadow-slate-200">
-                      <a href={`${el.link}`}>
-                        <h3 className="name text-lg font-bold transition-all duration-300 group-hover:text-2xl">
-                          {el.name}
-                        </h3>
-                        <div className="type font-medium transition-all duration-300 group-hover:text-lg">
-                          {el.type}
-                        </div>
-                        <p className="description font-thin transition-all duration-300 group-hover:text-lg">
-                          {el.description}
-                        </p>
-                      </a>
-                    </div>
-                  </>
-                );
-              })}
+              {projects.map((el, index) => (
+                <div key={`project-${index}`} className="py-3">
+                  <div className="project_card group justify-evenly rounded-3xl py-2 text-center transition hover:border-2 hover:border-slate-200 hover:shadow-xl hover:shadow-slate-200">
+                    <a href={`${el.link}`}>
+                      <h3 className="name text-lg font-bold transition-all duration-300 group-hover:text-2xl">
+                        {el.name}
+                      </h3>
+                      <div className="type font-medium transition-all duration-300 group-hover:text-lg">
+                        {el.type}
+                      </div>
+                      <p className="description font-thin transition-all duration-300 group-hover:text-lg">
+                        {el.description}
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
         </div>
