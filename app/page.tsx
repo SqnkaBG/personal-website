@@ -22,7 +22,7 @@ const GeneralPage = (years: any, months: any) => {
 
   return (
     <div className="page relative">
-      <div className="page_wrapper absolute flex h-screen w-screen flex-col bg-[#070729] opacity-80 lg:flex-wrap">
+      <div className="page_wrapper absolute inset-0 flex h-screen w-screen flex-col overflow-y-auto bg-[#070729] opacity-80 sm:scrollbar-thin sm:scrollbar-track-gray-200 sm:scrollbar-thumb-gray-500 lg:flex-wrap lg:overflow-hidden lg:scrollbar-none">
         <div className="left_menu font-masterpiece flex h-screen flex-col justify-evenly bg-slate-400 text-slate-700 lg:w-[45%]">
           <div className="title_section flex h-[60%] flex-col items-center p-3 sm:p-5">
             <div className="flex flex-col items-center pb-2 pt-5 text-3xl font-semibold sm:justify-between lg:flex-row lg:text-5xl">
