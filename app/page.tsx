@@ -34,7 +34,7 @@ const GeneralPage = (years: any, months: any) => {
               Junior Fullstack Developer
             </h2>
             <h3 className="flex flex-col items-center justify-center text-center font-extralight">
-              I specialize in developing a variety of websites and applications. 1
+              I specialize in developing a variety of websites and applications.
             </h3>
           </div>
 
