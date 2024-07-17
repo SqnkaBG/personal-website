@@ -38,7 +38,7 @@ const GeneralPage = (years: any, months: any) => {
             </h3>
           </div>
 
-          <div className="buttons_leftMenu flex h-[40%] flex-col items-center p-3 font-mono">
+          <div className="buttons_leftMenu flex h-[20%] flex-col items-center p-3 font-mono">
             <a href="#about">
               <button className="transition duration-300 hover:rounded-full hover:text-xl hover:text-white">
                 About
