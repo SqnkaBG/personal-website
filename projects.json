@@ -1,0 +1,14 @@
+[
+  {
+    "name": "AC website",
+    "link": "https://ac-green.vercel.app",
+    "description": "Simple demo website showcasing air conditioners. The design was choosed by the client",
+    "type": "demo website"
+  },
+  {
+    "name": "Sect website",
+    "link": "https://sect-website.vercel.app",
+    "description": "Simple demo website using html template for the design. Applied apis from backend",
+    "type": "demo website"
+  }
+]
