@@ -22,8 +22,8 @@ const GeneralPage = (years: any, months: any) => {
 
   return (
     <div className="page relative">
-      <div className="page_wrapper absolute flex h-screen w-screen flex-wrap bg-[#070729] opacity-80">
-        <div className="left_menu font-masterpiece flex h-screen w-[45%] flex-col justify-evenly bg-slate-400 text-slate-700">
+      <div className="page_wrapper absolute flex h-screen w-screen flex-col bg-[#070729] opacity-80 lg:flex-wrap">
+        <div className="left_menu font-masterpiece flex h-screen flex-col justify-evenly bg-slate-400 text-slate-700 lg:w-[45%]">
           <div className="title_section flex h-[60%] flex-col items-center p-3 sm:p-5">
             <div className="flex flex-col items-center pb-2 pt-5 text-3xl font-semibold sm:justify-between lg:flex-row lg:text-5xl">
               <h1 className="lg:pr-2">Valentin</h1>
@@ -38,7 +38,7 @@ const GeneralPage = (years: any, months: any) => {
             </h3>
           </div>
 
-          <div className="buttons_leftMenu flex h-[20%] flex-col items-center p-3 font-mono">
+          <div className="buttons_leftMenu hidden h-[20%] flex-col items-center p-3 font-mono lg:flex">
             <a href="#about">
               <button className="transition duration-300 hover:rounded-full hover:text-xl hover:text-white">
                 About
@@ -55,7 +55,8 @@ const GeneralPage = (years: any, months: any) => {
               </button>
             </a>
           </div>
-          <div className="socials_section flex h-[20%] flex-wrap items-center justify-center">
+
+          <div className="socials_section mt-10 flex h-[20%] flex-wrap items-center justify-center">
             <a href="https://github.com/SqnkaBG" className="lg:pr-2">
               <FaGithub size={30} />
             </a>
@@ -79,7 +80,7 @@ const GeneralPage = (years: any, months: any) => {
             </a>
           </div>
         </div>
-        <div className="showcasing_block scrollbar-transparent flex h-[100] max-h-[100%] w-[55%] flex-col overflow-y-auto px-2 py-2 text-white scrollbar-none">
+        <div className="showcasing_block lg:scrollbar-transparent flex flex-col px-2 py-2 text-white lg:h-[100] lg:max-h-[100%] lg:w-[55%] lg:overflow-y-auto lg:scrollbar-none">
           <section
             id="about"
             className="flex h-auto w-[100%] flex-col items-center pt-3"
