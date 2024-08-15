@@ -33,7 +33,7 @@ const GeneralPage = (years: any, months: any) => {
             <h2 className="pb-2 text-center font-serif text-xl">
               Junior Fullstack Developer
             </h2>
-            <h3 className="flex flex-col items-center justify-center text-center font-extralight">
+            <h3 className="font flex flex-col items-center justify-center text-center">
               I specialize in developing a variety of websites and applications.
             </h3>
           </div>

@@ -4,11 +4,5 @@
     "link": "https://ac-green.vercel.app",
     "description": "Simple demo website showcasing air conditioners. The design was choosed by the client",
     "type": "Demo website"
-  },
-  {
-    "name": "Sect website",
-    "link": "https://sect-website.vercel.app",
-    "description": "Simple demo website using html template for the design. Applied apis from backend",
-    "type": "Demo website"
   }
 ]
