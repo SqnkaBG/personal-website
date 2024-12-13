@@ -57,25 +57,38 @@ const GeneralPage = (years: any, months: any) => {
           </div>
 
           <div className="socials_section mt-10 flex h-[20%] flex-wrap items-center justify-center">
-            <a href="https://github.com/SqnkaBG" className="lg:pr-2">
+            <a
+              href="https://github.com/SqnkaBG"
+              target="_blank"
+              className="lg:pr-2"
+            >
               <FaGithub size={30} />
             </a>
-            <a href="mailto:biznesvalio@gmail.com" className="lg:pr-2">
+            <a
+              href="mailto:biznesvalio@gmail.com"
+              className="lg:pr-2"
+              target="_blank"
+            >
               <MdEmail size={30} />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=100088659195380"
               className="lg:pr-2"
+              target="_blank"
             >
               <IoLogoFacebook size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/valentin-shindarov-a85367231/"
               className="lg:pr-2"
+              target="_blank"
             >
               <TiSocialLinkedin size={30} />
             </a>
-            <a href="https://drive.google.com/file/d/1_KicwdPzLIauSiBYqcv8TnSnl4C4Ye2B/view?usp=drive_link">
+            <a
+              href="https://drive.google.com/file/d/1_KicwdPzLIauSiBYqcv8TnSnl4C4Ye2B/view?usp=drive_link"
+              target="_blank"
+            >
               <MdDescription size={30} />
             </a>
           </div>
